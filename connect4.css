@@ -1,0 +1,79 @@
+
+html{
+    background-image: url(https://images.wallpapersden.com/image/download/cool-4k-pattern_bGduZWyUmZqaraWkpJRobWllrWdma2U.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+h1 {
+ color: white;
+ font-size: 75px;
+ margin-bottom: -30px;
+ transition: font-size: 1s;
+text-shadow: black 6px 8px;
+transition: all 1.6s;
+letter-spacing: .2rem
+}
+
+body {
+font-family: 'Monoton', cursive;
+text-align: center;
+align-items: center;
+}
+
+#winner{
+font-family: 'Nerko One', cursive;
+transition: all 1.6s;
+font-size: 50px;
+
+margin-bottom: 30px;
+-webkit-text-stroke-width: 1.5px;
+-webkit-text-stroke-color: black;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    
+    background: linear-gradient(rgb(174, 159, 197),rgb(50, 43, 51));
+    border: 10px solid rgb(22, 22, 22);
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    /* holes */
+    background-color: rgb(29, 26, 32);
+    border-radius: 50%;
+    border: 5px solid rgb(31, 26, 31);
+}
+
+.tile:hover {
+cursor: pointer;
+}
+
+.red-piece {
+    background: repeating-radial-gradient(red, #860101);
+}
+
+.blue-piece {
+    background: repeating-radial-gradient(rgb(45, 45, 255), rgb(2, 2, 99));
+}
+
+.big {
+    transform: scale(1.0);
+}
+
+.small {
+    transform: scale(.95);
+}
+
+footer {
+    margin-bottom: 250px;
+}
