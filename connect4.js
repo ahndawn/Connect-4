@@ -137,3 +137,18 @@ setInterval(function () {
     h2.classList.toggle('big')
     h2.classList.toggle('small')
     }, 1000);
+
+    const h1 = document.querySelector('h1');
+
+function randomRGB() {
+    //use rgb and create variables with the 'random' formula
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    return `rgb(${r},${g},${b})`
+}
+
+setInterval(function(){
+    h1.style.color = randomRGB();
+}, 800);
