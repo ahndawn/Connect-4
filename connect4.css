@@ -79,3 +79,22 @@ cursor: pointer;
 footer {
     margin-bottom: 250px;
 }
+
+input { 
+    background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  /* text-shadow: #0a0404 4px 4px; */
+  display: inline-block;
+  font-size: 30px;
+  font-family:'Nerko One', cursive;
+}
+
+input:hover {
+    cursor: pointer;
+    font-size: 35px;
+    padding: 5px;
+}

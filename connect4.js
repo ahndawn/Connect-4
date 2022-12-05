@@ -9,6 +9,7 @@ let rows = 6;
 let columns = 7;
 let currColumns = [];
 
+
 window.onload = function() {
     setGame();
     winner.innerText = "Red's Turn. Click any Slot to Start Game"
@@ -123,10 +124,12 @@ function setWinner(r, c) {
     let winner = document.getElementById("winner");
     if (board[r][c] == p1) {
         winner.innerText = "Red Wins!"; 
-        winner.style.color = "red";          
+        winner.style.color = "red";
+        setTimeout(() =>alert("player one(red) wins "), 100);            
     } else {
         winner.innerText = "Blue Wins!";
         winner.style.color = "blue";
+        setTimeout(() =>alert("player two (blue) wins "), 100);  
     }
     gameOver = true;
 }
@@ -152,3 +155,6 @@ function randomRGB() {
 setInterval(function(){
     h1.style.color = randomRGB();
 }, 800);
+
+
+
